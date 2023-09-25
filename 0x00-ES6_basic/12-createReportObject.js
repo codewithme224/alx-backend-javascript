@@ -1,12 +1,9 @@
 export default function createReportObject(employeesList) {
-     const allEmployees = {
-          allEmployees: {
-               ...employeesList,
-          },
-          getNumberOfDepartments(employeesList) {
-               return Object.keys(employeesList).length;
-          },
-     };
-
-     return allEmployees;
+  return {
+    allEmployees: employeesList,
+    // eslint-disable-next-line no-shadow
+    getNumberOfDepartments(employeesList) {
+      return Object.keys(employeesList).length;
+    },
+  };
 }
