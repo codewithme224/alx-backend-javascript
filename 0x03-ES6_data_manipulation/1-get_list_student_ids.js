@@ -6,9 +6,9 @@ If the argument is not an array, the function is returning an empty array.
 
 You must use the map function on the array. */
 
-export default function getListStudentIds(array) {
-  if (!Array.isArray(array)) {
-    return [];
+export default function getListStudentIds(students) {
+  if (students instanceof Array) {
+    return students.map((student) => student.id);
   }
-  return array.map((item) => item.id);
+  return [];
 }
