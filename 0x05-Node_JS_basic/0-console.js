@@ -1,5 +1,5 @@
-function displayMessage (greeting) {
-  console.log(greeting);
-}
-
-module.exports = displayMessage;
+function displayMessage(greetings) {
+    console.log(greetings);
+  }
+  
+  module.exports = displayMessage;
